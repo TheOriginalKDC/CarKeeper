@@ -54,20 +54,6 @@ Add form for entering and saving car details
 
 Hook up real-time updates to database with React forms
 
-📂 Folder Structure
-car-keeper/
-├── backend/
-│   ├── server.js         # Express server
-│   ├── db.js             # SQLite connection
-│   └── schema.sql        # DB schema
-├── frontend/
-│   ├── src/
-│   │   ├── pages/        # Dashboard, Maintenance, etc.
-│   │   ├── components/   # Navbar
-│   │   └── styles/       # App.css
-├── .env
-└── README.md
-
 ✍️ Author
 Built by Kyle Campbell
 GitHub: https://github.com/TheOriginalKDC
