@@ -11,16 +11,16 @@ Database: SQLite3
 
 Styling: Custom CSS (dark theme with green accents)
 
-📦 Features Completed (Sprint 1 + 2)
+📦 Features Completed (Sprint 1 - 3)
 Full frontend layout with routing between Dashboard, Car Details, Maintenance, and Settings pages
 
-Custom dark-themed UI with responsive navigation
+Custom dark-themed UI with responsive navigation and styling
 
-Initial SQLite database created via schema.sql
+SQLite database fully set up with vehicles and maintenance tables
 
-Backend Express server running on port 5000
+Backend Express server with routes for viewing and adding vehicles and maintenance records
 
-Project supports user-specific stored data (prepped for future expansion)
+Functionality to add cars, track maintenance items, and view all data in real-time
 
 🏃‍♂️ Getting Started
 Clone the Repository
@@ -47,12 +47,12 @@ Open another terminal window:
 cd ../frontend
 npm start
 
-🌱 Upcoming Features (Sprint 3 Goals)
-Fetch maintenance data from backend and display in UI
+🌱 Upcoming Features (Sprint 4 Goals)
+Show recent maintenance and upcoming due items per vehicle on Dashboard
 
-Add form for entering and saving car details
+Use default mileage intervals to auto-calculate next service due
 
-Hook up real-time updates to database with React forms
+Display alerts for upcoming or overdue maintenance tasks
 
 ✍️ Author
 Built by Kyle Campbell
