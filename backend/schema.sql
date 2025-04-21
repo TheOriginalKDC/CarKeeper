@@ -1,25 +1,23 @@
-CREATE TABLE IF NOT EXISTS users (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  username TEXT NOT NULL,
-  password TEXT NOT NULL
+-- Drop old tables if re-running schema manually
+DROP TABLE IF EXISTS vehicles;
+DROP TABLE IF EXISTS maintenance;
+
+-- Vehicles Table
+CREATE TABLE vehicles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    make TEXT NOT NULL,
+    model TEXT NOT NULL,
+    year INTEGER NOT NULL,
+    mileage INTEGER NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS car_details (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  user_id INTEGER,
-  make TEXT,
-  model TEXT,
-  year INTEGER,
-  mileage INTEGER,
-  FOREIGN KEY(user_id) REFERENCES users(id)
-);
-
-CREATE TABLE IF NOT EXISTS maintenance (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  user_id INTEGER,
-  type TEXT,
-  mileage_due INTEGER,
-  date_due TEXT,
-  completed INTEGER DEFAULT 0,
-  FOREIGN KEY(user_id) REFERENCES users(id)
+-- Maintenance Table
+CREATE TABLE maintenance (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    vehicle_id INTEGER NOT NULL,
+    type TEXT NOT NULL,
+    mileage_interval INTEGER,
+    last_service_mileage INTEGER,
+    notes TEXT,
+    FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)
 );

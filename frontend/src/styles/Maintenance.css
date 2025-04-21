@@ -1,6 +1,47 @@
-.page-container {
-    padding: 2rem;
-    background-color: #1e1e1e;
-    color: #ffffff;
-  }
-  
+.maintenance-container {
+  background-color: #1c1c1c;
+  padding: 30px;
+  color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.maintenance-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.maintenance-form input,
+.maintenance-form select {
+  padding: 10px;
+  background-color: #2c2c2c;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  border-radius: 5px;
+  flex: 1 1 200px;
+}
+
+.maintenance-form button {
+  padding: 10px 20px;
+  background-color: #00ff88;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}
+
+.maintenance-list {
+  list-style: none;
+  padding: 0;
+}
+
+.maintenance-list li {
+  background-color: #2c2c2c;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid #00ff88;
+  border-radius: 5px;
+}

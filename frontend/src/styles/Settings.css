@@ -1,6 +1,23 @@
-.page-container {
-    padding: 2rem;
-    background-color: #1e1e1e;
-    color: #ffffff;
-  }
-  
+.settings-container {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.settings-container h2 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+.settings-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

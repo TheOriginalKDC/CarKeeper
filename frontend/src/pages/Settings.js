@@ -3,9 +3,10 @@ import '../styles/Settings.css';
 
 const Settings = () => {
   return (
-    <div className="page-container">
+    <div className="settings-container">
       <h2>Settings</h2>
-      <p>Customize your experience and update account preferences.</p>
+      <p>This page can be used to reset app data, switch themes, or manage preferences in a future version.</p>
+      <button onClick={() => alert('Reset feature coming soon!')}>Reset All Data</button>
     </div>
   );
 };
