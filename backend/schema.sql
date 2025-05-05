@@ -1,6 +1,7 @@
 -- Drop old tables if re-running schema manually
 DROP TABLE IF EXISTS vehicles;
 DROP TABLE IF EXISTS maintenance;
+DROP TABLE IF EXISTS settings;
 
 -- Vehicles Table
 CREATE TABLE vehicles (
